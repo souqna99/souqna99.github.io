@@ -1,49 +1,116 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta name="mitgo-verification" content="55e03d18-4395-484b-be95-e72c18023c49" />
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>سوقنا | SOUQNA</title>
-<style>
-:root{--navy:#172b4d;--gold:#f5b63d;--bg:#f6f8fb;--text:#172033;--muted:#697386;--line:#e4e8ef}
-*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text)}
-a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 18px}
-.top{background:var(--navy);color:#fff;font-size:13px;padding:9px 0}.header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:3}
-.head{display:flex;align-items:center;gap:18px;padding:16px 0}.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:23px;color:var(--navy);white-space:nowrap}.logo{width:42px;height:42px;border-radius:13px;background:var(--gold);display:grid;place-items:center;font-size:24px}
-.search{flex:1;display:flex;gap:8px}.search input{width:100%;border:1px solid var(--line);border-radius:12px;padding:13px;font-size:14px}.btn{border:0;border-radius:11px;padding:12px 17px;font-weight:700;cursor:pointer}.primary{background:var(--navy);color:#fff}.gold{background:var(--gold);color:var(--navy)}.icons{display:flex;gap:8px}.iconbtn{border:1px solid var(--line);background:#fff;border-radius:11px;padding:11px;cursor:pointer}
-.hero{margin:28px 0;display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.hero-main{background:var(--gold);border-radius:22px;padding:36px;min-height:250px;display:flex;flex-direction:column;justify-content:center}.hero-main h1{font-size:34px;margin:8px 0;line-height:1.35}.hero-main p{margin:8px 0 22px;max-width:470px;line-height:1.8}.hero-side{background:var(--navy);color:#fff;border-radius:22px;padding:28px;display:flex;flex-direction:column;justify-content:center}.hero-side h2{font-size:25px;margin:0 0 12px}.section-head{display:flex;justify-content:space-between;align-items:center;margin:26px 0 14px}.section-head h2{font-size:21px;margin:0}.muted{color:var(--muted);font-size:13px}.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.cat{background:#fff;border:1px solid var(--line);border-radius:15px;padding:17px 8px;text-align:center;cursor:pointer}.cat b{display:block;font-size:27px;margin-bottom:8px}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.product{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}.visual{height:160px;background:#eef2f7;display:grid;place-items:center;font-size:65px}.body{padding:14px;display:flex;flex-direction:column;gap:9px;flex:1}.tag{font-size:11px;color:#7b8494}.product h3{font-size:15px;margin:0;line-height:1.6}.price{font-weight:800;color:var(--navy)}.product .btn{margin-top:auto;width:100%;font-size:12px}.notice{margin:20px 0;padding:14px;border:1px solid var(--line);background:#fff;border-radius:12px;display:none}.footer{margin-top:45px;background:var(--navy);color:#fff;padding:32px 0}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:25px}.footer p{color:#d5dbea;line-height:1.8;font-size:13px}.small{font-size:12px;color:#aeb9ce}
-@media(max-width:800px){.hero{grid-template-columns:1fr}.categories{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}.head{flex-wrap:wrap}.search{order:3;flex-basis:100%}.hero-main h1{font-size:28px}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:430px){.wrap{padding:0 12px}.brand{font-size:20px}.icons{margin-right:auto}.hero-main,.hero-side{padding:24px}.products{gap:10px}.visual{height:125px}.body{padding:11px}.categories{gap:7px}.cat{font-size:12px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="سوقنا - متجر أفلييت عربي لاكتشاف المنتجات والعروض المختارة.">
+  <meta name="theme-color" content="#172b4d">
+  <title>سوقنا | SOUQNA</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="top"><div class="wrap">🌍 منتجات عالمية مختارة • سوقنا منصة توصيات للتسويق بالعمولة</div></div>
-<header class="header"><div class="wrap head">
-<a class="brand" href="#"><span class="logo">س</span><span>سوقنا<small style="display:block;font-size:9px;letter-spacing:3px;color:#8a94a6">SOUQNA</small></span></a>
-<div class="search"><input id="search" placeholder="ابحث عن منتج أو قسم..."><button class="btn gold" onclick="filterProducts()">بحث</button></div>
-<div class="icons"><button class="iconbtn" onclick="show('المفضلة ستتوفر عند ربط قاعدة البيانات.')">♡</button><button class="iconbtn" onclick="show('السلة غير مطلوبة في نموذج Affiliate؛ الشراء يتم لدى المتجر الأصلي.')">🛒</button></div>
-</div></header>
-<main class="wrap">
-<section class="hero"><div class="hero-main"><div class="muted" style="color:#66501b">اكتشافات اليوم</div><h1>كل اللي بدك ياه<br>بمكان واحد</h1><p>منتجات مختارة من المتاجر العالمية، مع روابط مباشرة للشراء من البائع الأصلي.</p><div><button class="btn primary" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">تسوق الآن ←</button></div></div><div class="hero-side"><div class="small">SOUQNA PICKS</div><h2>اختيارات ذكية<br>وأسعار منافسة</h2><p style="line-height:1.8;color:#d5dbea">نساعدك على اكتشاف المنتجات المفيدة قبل اتخاذ قرار الشراء.</p><button class="btn gold" onclick="setCategory('الكل')">اكتشف المنتجات</button></div></section>
-<div class="section-head"><h2>تصفح الأقسام</h2><span class="muted">اختَر قسمًا</span></div>
-<div class="categories">
-<button class="cat" onclick="setCategory('إلكترونيات')"><b>📱</b>إلكترونيات</button><button class="cat" onclick="setCategory('منزل')"><b>🏠</b>المنزل</button><button class="cat" onclick="setCategory('أزياء')"><b>👟</b>أزياء</button><button class="cat" onclick="setCategory('جمال')"><b>✨</b>جمال</button><button class="cat" onclick="setCategory('ألعاب')"><b>🎮</b>ألعاب</button><button class="cat" onclick="setCategory('سيارات')"><b>🚗</b>سيارات</button>
-</div>
-<div class="section-head"><h2>🔥 منتجات مختارة</h2><span id="count" class="muted"></span></div>
-<div id="products" class="products"></div><div id="notice" class="notice" role="status"></div>
-</main>
-<footer class="footer"><div class="wrap footer-grid"><div><h2 style="margin-top:0">سوقنا | SOUQNA</h2><p>منصة توصيات للمنتجات العالمية. نعرض معلومات المنتجات ونحوّل الزائر إلى المتجر الأصلي عبر روابط التسويق بالعمولة.</p></div><div><b>روابط</b><p>الرئيسية<br>الأقسام<br>العروض<br>تواصل معنا</p></div><div><b>إفصاح</b><p>قد نحصل على عمولة من بعض الروابط المؤهلة دون تكلفة إضافية عليك.</p></div></div></footer>
-<script>
-const data=[
-['سماعات لاسلكية','إلكترونيات','🎧'],['حامل هاتف للسيارة','سيارات','🚗'],['مصباح مكتب ذكي','منزل','💡'],['حقيبة يومية','أزياء','👜'],['أداة عناية شخصية','جمال','🧴'],['لعبة تعليمية للأطفال','ألعاب','🧩'],['شاحن سريع','إلكترونيات','🔌'],['منظم أدراج','منزل','🗂️']
-];
-let category='الكل';
-function render(){const q=document.getElementById('search').value.trim().toLowerCase();const arr=data.filter(p=>(category==='الكل'||p[1]===category)&&(!q||(p[0]+' '+p[1]).toLowerCase().includes(q)));document.getElementById('count').textContent=arr.length+' منتجات';document.getElementById('products').innerHTML=arr.map(p=>`<article class="product"><div class="visual">${p[2]}</div><div class="body"><span class="tag">${p[1]}</span><h3>${p[0]}</h3><div class="price">السعر لدى المتجر الأصلي</div><button class="btn primary" onclick="show('هذا نموذج تجريبي. سنضع رابط Affiliate الحقيقي بعد اعتماد البرنامج وربط المنتجات.')">شاهد المنتج ↗</button></div></article>`).join('')||'<p class="muted">لم نجد منتجات مطابقة.</p>'}
-function setCategory(c){category=c;render();document.getElementById('products').scrollIntoView({behavior:'smooth',block:'start'})}
-function filterProducts(){category='الكل';render()}
-function show(t){const n=document.getElementById('notice');n.textContent=t;n.style.display='block'}
-document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')filterProducts()});render();
-</script>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="سوقنا">
+        <span class="brand-mark">س</span>
+        <span><strong>سوقنا</strong><small>SOUQNA</small></span>
+      </a>
+      <nav class="navlinks" aria-label="التنقل">
+        <a href="#home">الرئيسية</a>
+        <a href="#categories">الأقسام</a>
+        <a href="#products">المنتجات</a>
+        <a href="#how">كيف نعمل؟</a>
+        <a href="about.html">عن سوقنا</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">اختيارات ذكية • عروض عالمية</span>
+          <h1>اكتشف منتجات تستحق<br><span>تجربتك.</span></h1>
+          <p>سوقنا يساعدك على اكتشاف منتجات مختارة من متاجر عالمية، ثم ينقلك مباشرة إلى المتجر الشريك لإتمام الشراء.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">تصفح المنتجات</a>
+            <a class="btn ghost" href="#how">كيف يعمل سوقنا؟</a>
+          </div>
+          <div class="trust">
+            <span>✓ روابط مباشرة</span>
+            <span>✓ منتجات مختارة</span>
+            <span>✓ لا نخزن بيانات الدفع</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="orb orb1"></div><div class="orb orb2"></div>
+          <div class="hero-icon">🛍️</div>
+          <strong>سوقنا</strong>
+          <span>مكان واحد لاكتشاف الأفضل</span>
+          <div class="mini-stats">
+            <div><b>اختيارات</b><small>منتقاة</small></div>
+            <div><b>وجهات</b><small>موثوقة</small></div>
+            <div><b>تجربة</b><small>بسيطة</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">تسوق حسب الاهتمام</span><h2>الأقسام</h2></div>
+        </div>
+        <div class="categories">
+          <button class="cat active" data-category="all"><span>✨</span><b>الكل</b><small>كل المنتجات</small></button>
+          <button class="cat" data-category="electronics"><span>📱</span><b>إلكترونيات</b><small>تقنية واكسسوارات</small></button>
+          <button class="cat" data-category="home"><span>🏠</span><b>المنزل</b><small>حلول يومية</small></button>
+          <button class="cat" data-category="fashion"><span>👟</span><b>موضة</b><small>أناقة وإكسسوارات</small></button>
+          <button class="cat" data-category="gadgets"><span>⚡</span><b>أدوات ذكية</b><small>أفكار مفيدة</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-head products-head">
+          <div><span class="eyebrow">منتجاتنا</span><h2>اختيارات سوقنا</h2></div>
+          <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="ابحث عن منتج..."></div>
+        </div>
+        <div id="productsGrid" class="products-grid"></div>
+        <div id="empty" class="empty hidden">لا توجد منتجات مطابقة لبحثك.</div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">بكل وضوح</span><h2>كيف يعمل سوقنا؟</h2></div></div>
+        <div class="steps">
+          <div class="step"><i>01</i><h3>اكتشف</h3><p>نتصفح المنتجات والعروض ونختار ما نراه مناسبًا للمتسوق.</p></div>
+          <div class="step"><i>02</i><h3>قارن</h3><p>اقرأ المعلومات المتاحة ثم اضغط على المنتج لمعرفة التفاصيل عند الشريك.</p></div>
+          <div class="step"><i>03</i><h3>اشترِ بأمان</h3><p>يتم إتمام الدفع والطلب على موقع المتجر الشريك، وليس داخل سوقنا.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-strip">
+      <div class="container about-box">
+        <div><span class="eyebrow">شفافية</span><h2>سوقنا متجر اكتشاف، وليس وسيط دفع.</h2>
+        <p>قد نكسب عمولة عند شراء منتج عبر بعض روابطنا التابعة، دون تكلفة إضافية عليك. الأسعار والتوفر النهائيان يحددهما المتجر الشريك.</p></div>
+        <a class="btn dark" href="about.html">اعرف المزيد</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">س</span><span><strong>سوقنا</strong><small>SOUQNA</small></span></a><p>اكتشف. قارن. تسوق.</p></div>
+      <div><h4>روابط</h4><a href="#products">المنتجات</a><a href="about.html">عن سوقنا</a><a href="contact.html">تواصل معنا</a></div>
+      <div><h4>معلومات</h4><a href="privacy.html">الخصوصية</a><a href="terms.html">الشروط</a><a href="#how">كيف يعمل؟</a></div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> سوقنا SOUQNA — جميع الحقوق محفوظة.</div>
+  </footer>
+  <script src="app.js"></script>
 </body>
 </html>
