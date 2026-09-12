@@ -3,25 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="سوقنا - متجر أفلييت عربي لاكتشاف المنتجات والعروض المختارة.">
-  <meta name="theme-color" content="#172b4d">
+  <meta name="description" content="سوقنا SOUQNA - متجر اكتشاف عربي بتصميم فاخر لاختيار المنتجات والعروض العالمية.">
+  <meta name="theme-color" content="#08111f">
   <title>سوقنا | SOUQNA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="site-bg" aria-hidden="true"><span></span><span></span><span></span></div>
+
   <header class="topbar">
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="سوقنا">
         <span class="brand-mark">س</span>
-        <span><strong>سوقنا</strong><small>SOUQNA</small></span>
+        <span class="brand-copy"><strong>سوقنا</strong><small>SOUQNA</small></span>
       </a>
-      <nav class="navlinks" aria-label="التنقل">
+      <nav class="navlinks" id="navLinks" aria-label="التنقل">
         <a href="#home">الرئيسية</a>
         <a href="#categories">الأقسام</a>
-        <a href="#products">المنتجات</a>
-        <a href="#how">كيف نعمل؟</a>
-        <a href="about.html">عن سوقنا</a>
+        <a href="#products">العروض</a>
+        <a href="#why">لماذا سوقنا؟</a>
+        <a href="about.html">من نحن</a>
       </nav>
+      <a class="nav-cta" href="#products">تسوق الآن</a>
       <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
     </div>
   </header>
@@ -29,45 +35,58 @@
   <main id="home">
     <section class="hero">
       <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">اختيارات ذكية • عروض عالمية</span>
-          <h1>اكتشف منتجات تستحق<br><span>تجربتك.</span></h1>
-          <p>سوقنا يساعدك على اكتشاف منتجات مختارة من متاجر عالمية، ثم ينقلك مباشرة إلى المتجر الشريك لإتمام الشراء.</p>
+        <div class="hero-content">
+          <span class="eyebrow">منتجات مختارة • تجربة فاخرة • روابط آمنة</span>
+          <h1>تسوّق بذكاء من <span>سوقنا</span></h1>
+          <p class="hero-lead">واجهة عربية راقية تجمع لك منتجات منتقاة بعناية من متاجر عالمية، مع انتقال مباشر للشراء من المتجر الشريك.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#products">تصفح المنتجات</a>
-            <a class="btn ghost" href="#how">كيف يعمل سوقنا؟</a>
+            <a class="btn primary" href="#products">اكتشف العروض</a>
+            <a class="btn glass" href="#why">لماذا تختارنا؟</a>
           </div>
-          <div class="trust">
-            <span>✓ روابط مباشرة</span>
-            <span>✓ منتجات مختارة</span>
-            <span>✓ لا نخزن بيانات الدفع</span>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="orb orb1"></div><div class="orb orb2"></div>
-          <div class="hero-icon">🛍️</div>
-          <strong>سوقنا</strong>
-          <span>مكان واحد لاكتشاف الأفضل</span>
-          <div class="mini-stats">
-            <div><b>اختيارات</b><small>منتقاة</small></div>
-            <div><b>وجهات</b><small>موثوقة</small></div>
-            <div><b>تجربة</b><small>بسيطة</small></div>
+          <div class="trust-row" aria-label="مميزات الثقة">
+            <span>✓ لا نطلب بيانات دفع</span>
+            <span>✓ روابط أفلييت واضحة</span>
+            <span>✓ اختيار يدوي للمنتجات</span>
           </div>
         </div>
+        <div class="showcase" aria-label="واجهة منتجات سوقنا">
+          <div class="deal-card main-deal">
+            <span class="deal-badge">اختيار اليوم</span>
+            <div class="deal-visual">⌚</div>
+            <h2>منتجات ذكية للحياة اليومية</h2>
+            <p>تصميم متجر يبرز المنتج ويشجع الزائر على الضغط والشراء.</p>
+            <div class="deal-meta"><b>AliExpress</b><span>رابط مباشر ↗</span></div>
+          </div>
+          <div class="floating-card card-a">🔥 عروض رائجة</div>
+          <div class="floating-card card-b">⭐ تقييمات مختارة</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature-strip">
+      <div class="container feature-grid">
+        <div><b>01</b><span>اكتشاف سريع</span></div>
+        <div><b>02</b><span>منتجات منظمة</span></div>
+        <div><b>03</b><span>تجربة هاتف ممتازة</span></div>
+        <div><b>04</b><span>تحويل مباشر للشراء</span></div>
       </div>
     </section>
 
     <section class="section" id="categories">
       <div class="container">
         <div class="section-head">
-          <div><span class="eyebrow">تسوق حسب الاهتمام</span><h2>الأقسام</h2></div>
+          <div>
+            <span class="eyebrow">تصفح حسب الاهتمام</span>
+            <h2>أقسام سوقنا</h2>
+          </div>
+          <p>اختر القسم المناسب لتصل بسرعة إلى المنتجات التي تهمك.</p>
         </div>
         <div class="categories">
-          <button class="cat active" data-category="all"><span>✨</span><b>الكل</b><small>كل المنتجات</small></button>
+          <button class="cat active" data-category="all"><span>✦</span><b>الكل</b><small>كل الاختيارات</small></button>
           <button class="cat" data-category="electronics"><span>📱</span><b>إلكترونيات</b><small>تقنية واكسسوارات</small></button>
-          <button class="cat" data-category="home"><span>🏠</span><b>المنزل</b><small>حلول يومية</small></button>
-          <button class="cat" data-category="fashion"><span>👟</span><b>موضة</b><small>أناقة وإكسسوارات</small></button>
-          <button class="cat" data-category="gadgets"><span>⚡</span><b>أدوات ذكية</b><small>أفكار مفيدة</small></button>
+          <button class="cat" data-category="home"><span>🏠</span><b>المنزل</b><small>أدوات عملية</small></button>
+          <button class="cat" data-category="fashion"><span>👟</span><b>موضة</b><small>ستايل وإكسسوارات</small></button>
+          <button class="cat" data-category="gadgets"><span>⚡</span><b>أدوات ذكية</b><small>حلول مبتكرة</small></button>
         </div>
       </div>
     </section>
@@ -75,7 +94,10 @@
     <section class="section products-section" id="products">
       <div class="container">
         <div class="section-head products-head">
-          <div><span class="eyebrow">منتجاتنا</span><h2>اختيارات سوقنا</h2></div>
+          <div>
+            <span class="eyebrow">اختيارات بعناية</span>
+            <h2>منتجات تجذب المشتري</h2>
+          </div>
           <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="ابحث عن منتج..."></div>
         </div>
         <div id="productsGrid" class="products-grid"></div>
@@ -83,31 +105,42 @@
       </div>
     </section>
 
-    <section class="section how" id="how">
-      <div class="container">
-        <div class="section-head"><div><span class="eyebrow">بكل وضوح</span><h2>كيف يعمل سوقنا؟</h2></div></div>
-        <div class="steps">
-          <div class="step"><i>01</i><h3>اكتشف</h3><p>نتصفح المنتجات والعروض ونختار ما نراه مناسبًا للمتسوق.</p></div>
-          <div class="step"><i>02</i><h3>قارن</h3><p>اقرأ المعلومات المتاحة ثم اضغط على المنتج لمعرفة التفاصيل عند الشريك.</p></div>
-          <div class="step"><i>03</i><h3>اشترِ بأمان</h3><p>يتم إتمام الدفع والطلب على موقع المتجر الشريك، وليس داخل سوقنا.</p></div>
+    <section class="section why" id="why">
+      <div class="container why-grid">
+        <div class="why-copy">
+          <span class="eyebrow">ثقة ووضوح</span>
+          <h2>تصميم يساعد الزائر أن يفهم ويضغط ويشتري</h2>
+          <p>الصفحة الجديدة تركّز على عرض المنتج بشكل راقٍ، أزرار واضحة، بطاقات أكثر جاذبية، ومساحة ثقة قبل تحويل العميل إلى المتجر الشريك.</p>
+          <a class="btn dark" href="contact.html">تواصل معنا</a>
+        </div>
+        <div class="why-cards">
+          <article><i>◆</i><h3>واجهة أنيقة</h3><p>ألوان فاخرة وتباعد مريح للعين.</p></article>
+          <article><i>◆</i><h3>مناسبة للهاتف</h3><p>تظهر المنتجات بشكل جذاب على شاشة الجوال.</p></article>
+          <article><i>◆</i><h3>أزرار قوية</h3><p>دعوة واضحة لاتخاذ القرار وزيارة المنتج.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section about-strip">
-      <div class="container about-box">
-        <div><span class="eyebrow">شفافية</span><h2>سوقنا متجر اكتشاف، وليس وسيط دفع.</h2>
-        <p>قد نكسب عمولة عند شراء منتج عبر بعض روابطنا التابعة، دون تكلفة إضافية عليك. الأسعار والتوفر النهائيان يحددهما المتجر الشريك.</p></div>
-        <a class="btn dark" href="about.html">اعرف المزيد</a>
+    <section class="section disclosure">
+      <div class="container disclosure-box">
+        <div>
+          <span class="eyebrow">شفافية</span>
+          <h2>سوقنا لا يبيع مباشرة ولا يستقبل المدفوعات.</h2>
+          <p>عند الضغط على بعض الروابط قد نربح عمولة أفلييت دون تكلفة إضافية عليك. السعر النهائي، الشحن، والضمان يتم تحديدها داخل موقع المتجر الشريك.</p>
+        </div>
+        <a class="btn primary" href="terms.html">الشروط والسياسات</a>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container footer-grid">
-      <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">س</span><span><strong>سوقنا</strong><small>SOUQNA</small></span></a><p>اكتشف. قارن. تسوق.</p></div>
-      <div><h4>روابط</h4><a href="#products">المنتجات</a><a href="about.html">عن سوقنا</a><a href="contact.html">تواصل معنا</a></div>
-      <div><h4>معلومات</h4><a href="privacy.html">الخصوصية</a><a href="terms.html">الشروط</a><a href="#how">كيف يعمل؟</a></div>
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">س</span><span class="brand-copy"><strong>سوقنا</strong><small>SOUQNA</small></span></a>
+        <p>متجر اكتشاف عربي بتجربة راقية وروابط مباشرة للمتاجر الشريكة.</p>
+      </div>
+      <div><h4>المتجر</h4><a href="#products">المنتجات</a><a href="#categories">الأقسام</a><a href="#why">لماذا سوقنا؟</a></div>
+      <div><h4>معلومات</h4><a href="about.html">عن سوقنا</a><a href="privacy.html">الخصوصية</a><a href="terms.html">الشروط</a><a href="contact.html">تواصل معنا</a></div>
     </div>
     <div class="container copyright">© <span id="year"></span> سوقنا SOUQNA — جميع الحقوق محفوظة.</div>
   </footer>
