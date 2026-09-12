@@ -1,241 +1,149 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#ffffff">
-<meta name="description" content="سوقنا SOUQNA - اكتشف المنتجات والعروض المفضلة.">
-<title>سوقنا | SOUQNA</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="سوقنا SOUQNA - متجر اكتشاف عربي بتصميم فاخر لاختيار المنتجات والعروض العالمية.">
+  <meta name="theme-color" content="#08111f">
+  <title>سوقنا | SOUQNA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-  <div class="header-inner">
-    <button class="hamburger" id="menuBtn" aria-label="القائمة"><span></span><span></span><span></span></button>
-    <a class="brand" href="#home">
-      <div class="brand-text"><b>سوقنا</b><small>S O U Q N A</small></div>
-      <div class="brand-mark">س</div>
-    </a>
-  </div>
-</header>
+  <div class="site-bg" aria-hidden="true"><span></span><span></span><span></span></div>
 
-<main id="home">
-  <section class="hero">
-    <div class="hero-copy">
-      <span class="eyebrow">اختيارات ذكية • عروض عالمية</span>
-      <h1>اكتشف منتجاتك<br><strong>المفضلة</strong></h1>
-      <p>جودة عالية &nbsp;•&nbsp; أسعار مميزة &nbsp;•&nbsp; توصيل عالمي</p>
-      <a class="hero-btn" href="#products">تسوّق الآن <span>←</span></a>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="سوقنا">
+        <span class="brand-mark">س</span>
+        <span class="brand-copy"><strong>سوقنا</strong><small>SOUQNA</small></span>
+      </a>
+      <nav class="navlinks" id="navLinks" aria-label="التنقل">
+        <a href="#home">الرئيسية</a>
+        <a href="#categories">الأقسام</a>
+        <a href="#products">العروض</a>
+        <a href="#why">لماذا سوقنا؟</a>
+        <a href="about.html">من نحن</a>
+      </nav>
+      <a class="nav-cta" href="#products">تسوق الآن</a>
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
     </div>
-    <div class="hero-art" aria-hidden="true">
-      <div class="sun"></div>
-      <div class="cart">🛒</div>
-      <div class="parcel">📦</div>
-      <div class="bag">🛍️</div>
-      <div class="spark s1">✦</div><div class="spark s2">✦</div><div class="spark s3">•</div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">منتجات مختارة • تجربة فاخرة • روابط آمنة</span>
+          <h1>تسوّق بذكاء من <span>سوقنا</span></h1>
+          <p class="hero-lead">واجهة عربية راقية تجمع لك منتجات منتقاة بعناية من متاجر عالمية، مع انتقال مباشر للشراء من المتجر الشريك.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">اكتشف العروض</a>
+            <a class="btn glass" href="#why">لماذا تختارنا؟</a>
+          </div>
+          <div class="trust-row" aria-label="مميزات الثقة">
+            <span>✓ لا نطلب بيانات دفع</span>
+            <span>✓ روابط أفلييت واضحة</span>
+            <span>✓ اختيار يدوي للمنتجات</span>
+          </div>
+        </div>
+        <div class="showcase" aria-label="واجهة منتجات سوقنا">
+          <div class="deal-card main-deal">
+            <span class="deal-badge">اختيار اليوم</span>
+            <div class="deal-visual">⌚</div>
+            <h2>منتجات ذكية للحياة اليومية</h2>
+            <p>تصميم متجر يبرز المنتج ويشجع الزائر على الضغط والشراء.</p>
+            <div class="deal-meta"><b>AliExpress</b><span>رابط مباشر ↗</span></div>
+          </div>
+          <div class="floating-card card-a">🔥 عروض رائجة</div>
+          <div class="floating-card card-b">⭐ تقييمات مختارة</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature-strip">
+      <div class="container feature-grid">
+        <div><b>01</b><span>اكتشاف سريع</span></div>
+        <div><b>02</b><span>منتجات منظمة</span></div>
+        <div><b>03</b><span>تجربة هاتف ممتازة</span></div>
+        <div><b>04</b><span>تحويل مباشر للشراء</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">تصفح حسب الاهتمام</span>
+            <h2>أقسام سوقنا</h2>
+          </div>
+          <p>اختر القسم المناسب لتصل بسرعة إلى المنتجات التي تهمك.</p>
+        </div>
+        <div class="categories">
+          <button class="cat active" data-category="all"><span>✦</span><b>الكل</b><small>كل الاختيارات</small></button>
+          <button class="cat" data-category="electronics"><span>📱</span><b>إلكترونيات</b><small>تقنية واكسسوارات</small></button>
+          <button class="cat" data-category="home"><span>🏠</span><b>المنزل</b><small>أدوات عملية</small></button>
+          <button class="cat" data-category="fashion"><span>👟</span><b>موضة</b><small>ستايل وإكسسوارات</small></button>
+          <button class="cat" data-category="gadgets"><span>⚡</span><b>أدوات ذكية</b><small>حلول مبتكرة</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-head products-head">
+          <div>
+            <span class="eyebrow">اختيارات بعناية</span>
+            <h2>منتجات تجذب المشتري</h2>
+          </div>
+          <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="ابحث عن منتج..."></div>
+        </div>
+        <div id="productsGrid" class="products-grid"></div>
+        <div id="empty" class="empty hidden">لا توجد منتجات مطابقة لبحثك.</div>
+      </div>
+    </section>
+
+    <section class="section why" id="why">
+      <div class="container why-grid">
+        <div class="why-copy">
+          <span class="eyebrow">ثقة ووضوح</span>
+          <h2>تصميم يساعد الزائر أن يفهم ويضغط ويشتري</h2>
+          <p>الصفحة الجديدة تركّز على عرض المنتج بشكل راقٍ، أزرار واضحة، بطاقات أكثر جاذبية، ومساحة ثقة قبل تحويل العميل إلى المتجر الشريك.</p>
+          <a class="btn dark" href="contact.html">تواصل معنا</a>
+        </div>
+        <div class="why-cards">
+          <article><i>◆</i><h3>واجهة أنيقة</h3><p>ألوان فاخرة وتباعد مريح للعين.</p></article>
+          <article><i>◆</i><h3>مناسبة للهاتف</h3><p>تظهر المنتجات بشكل جذاب على شاشة الجوال.</p></article>
+          <article><i>◆</i><h3>أزرار قوية</h3><p>دعوة واضحة لاتخاذ القرار وزيارة المنتج.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section disclosure">
+      <div class="container disclosure-box">
+        <div>
+          <span class="eyebrow">شفافية</span>
+          <h2>سوقنا لا يبيع مباشرة ولا يستقبل المدفوعات.</h2>
+          <p>عند الضغط على بعض الروابط قد نربح عمولة أفلييت دون تكلفة إضافية عليك. السعر النهائي، الشحن، والضمان يتم تحديدها داخل موقع المتجر الشريك.</p>
+        </div>
+        <a class="btn primary" href="terms.html">الشروط والسياسات</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">س</span><span class="brand-copy"><strong>سوقنا</strong><small>SOUQNA</small></span></a>
+        <p>متجر اكتشاف عربي بتجربة راقية وروابط مباشرة للمتاجر الشريكة.</p>
+      </div>
+      <div><h4>المتجر</h4><a href="#products">المنتجات</a><a href="#categories">الأقسام</a><a href="#why">لماذا سوقنا؟</a></div>
+      <div><h4>معلومات</h4><a href="about.html">عن سوقنا</a><a href="privacy.html">الخصوصية</a><a href="terms.html">الشروط</a><a href="contact.html">تواصل معنا</a></div>
     </div>
-    <div class="dots"><i class="active"></i><i></i><i></i></div>
-  </section>
-
-  <section class="categories">
-    <div class="cat"><div class="cat-icon blue">🎧</div><b>إلكترونيات</b></div>
-    <div class="cat"><div class="cat-icon pink">👕</div><b>أزياء</b></div>
-    <div class="cat"><div class="cat-icon green">🏠</div><b>المنزل</b></div>
-    <div class="cat"><div class="cat-icon purple">🧴</div><b>التجميل</b></div>
-    <div class="cat"><div class="cat-icon peach">👶</div><b>الأطفال</b></div>
-    <div class="cat"><div class="cat-icon lilac">♡</div><b>مستلزمات أخرى</b></div>
-  </section>
-
-  <section class="section" id="products">
-    <div class="section-head">
-      <a href="#products">عرض الكل <span>←</span></a>
-      <h2>أفضل العروض <span>🔥</span></h2>
-    </div>
-
-    <div class="products">
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-1">🎧</div>
-        <div class="product-cat">إلكترونيات</div>
-        <h3>سماعات QCY T13 اللاسلكية</h3>
-        <div class="rating"><span>★</span> 4.5 <small>(36)</small></div>
-        <div class="price"><b>€21.19</b><del>€28.61</del></div>
-        <a class="product-btn" href="https://rzekl.com/g/1e8d1144940f1d6041cf16525dc3e0/?ulp=https%3A%2F%2Fde.aliexpress.com%2Fitem%2F1005003339550136.html" data-affiliate="" data-product-id="1">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-2">💡</div>
-        <div class="product-cat">إلكترونيات</div>
-        <h3>شريط إضاءة RGB ذكي</h3>
-        <div class="rating"><span>★</span> 4.0 <small>(3700)</small></div>
-        <div class="price"><b>€2.85</b><del>€3.85</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="2">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-3">📱</div>
-        <div class="product-cat">إلكترونيات</div>
-        <h3>حامل هاتف للسيارة</h3>
-        <div class="rating"><small>تحقق من التقييم في AliExpress</small></div>
-        <div class="price"><b>€12.19</b><del>€16.46</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="3">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-4">🖨️</div>
-        <div class="product-cat">إلكترونيات</div>
-        <h3>طابعة حرارية صغيرة</h3>
-        <div class="rating"><span>★</span> 3.7 <small>(6)</small></div>
-        <div class="price"><b>€17.69</b><del>€23.88</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="4">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-5">🖼️</div>
-        <div class="product-cat">إلكترونيات</div>
-        <h3>طابعة صور جيب Mijia 1S</h3>
-        <div class="rating"><span>★</span> 4.5 <small>(408)</small></div>
-        <div class="price"><b>€91.99</b><del>€124.19</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="5">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-6">💄</div>
-        <div class="product-cat">التجميل</div>
-        <h3>منظم مستحضرات تجميل أكريليك</h3>
-        <div class="rating"><span>★</span> 5.0 <small>(1)</small></div>
-        <div class="price"><b>€10.81</b><del>€14.59</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="6">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-7">✨</div>
-        <div class="product-cat">التجميل</div>
-        <h3>جهاز تدليك وتنظيف الوجه</h3>
-        <div class="rating"><small>تحقق من التقييم في AliExpress</small></div>
-        <div class="price"><b>€77.69</b><del>€104.88</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="7">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-8">👖</div>
-        <div class="product-cat">أزياء</div>
-        <h3>Leggings رياضية نسائية</h3>
-        <div class="rating"><span>★</span> 2.0 <small>(1)</small></div>
-        <div class="price"><b>€10.79</b><del>€14.57</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="8">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-9">🥗</div>
-        <div class="product-cat">المطبخ</div>
-        <h3>قطاعة خضار متعددة الوظائف</h3>
-        <div class="rating"><small>تحقق من التقييم في AliExpress</small></div>
-        <div class="price"><b>€4.28</b><del>€5.78</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="9">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-10">🥤</div>
-        <div class="product-cat">المطبخ</div>
-        <h3>خلاط/عصارة محمولة USB</h3>
-        <div class="rating"><small>تحقق من التقييم في AliExpress</small></div>
-        <div class="price"><b>€17.69</b><del>€23.88</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="10">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-11">🧸</div>
-        <div class="product-cat">الأطفال</div>
-        <h3>لعبة مونتيسوري خشبية</h3>
-        <div class="rating"><small>تحقق من التقييم في AliExpress</small></div>
-        <div class="price"><b>€8.49</b><del>€11.46</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="11">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-12">🔢</div>
-        <div class="product-cat">الأطفال</div>
-        <h3>لعبة تعليم الأرقام والحروف</h3>
-        <div class="rating"><small>تحقق من التقييم في AliExpress</small></div>
-        <div class="price"><b>€3.99</b><del>€5.39</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="12">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-13">🏷️</div>
-        <div class="product-cat">إلكترونيات</div>
-        <h3>طابعة ملصقات NIIMBOT B1</h3>
-        <div class="rating"><span>★</span> 4.8 <small>(954)</small></div>
-        <div class="price"><b>€38.39</b><del>€51.83</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="13">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-14">🎧</div>
-        <div class="product-cat">إلكترونيات</div>
-        <h3>سماعات Redmi Buds 6</h3>
-        <div class="rating"><span>★</span> 4.2 <small>(221)</small></div>
-        <div class="price"><b>€26.59</b><del>€35.90</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="14">🛒 شاهد المنتج</a>
-      </article>
-
-      <article class="product">
-        <div class="discount">عرض</div>
-        <div class="product-img product-15">🏠</div>
-        <div class="product-cat">المنزل</div>
-        <h3>شريط LED Tuya Wi‑Fi</h3>
-        <div class="rating"><span>★</span> 4.0 <small>(69)</small></div>
-        <div class="price"><b>€10.49</b><del>€14.16</del></div>
-        <a class="product-btn" href="#" data-affiliate="" data-product-id="15">🛒 شاهد المنتج</a>
-      </article>
-    </div>
-    <p class="catalog-note">الأسعار المعروضة للاسترشاد وقد تتغير حسب العرض والبائع. سيتم تفعيل رابط كل منتج بعد إنشاء رابط Admitad الخاص به.</p>
-  </section>
-
-  <section class="trust"
-    <div><span>🎧</span><b>دعم العملاء</b><small>على مدار الساعة</small></div>
-    <div><span>🚚</span><b>توصيل سريع</b><small>لجميع الدول</small></div>
-    <div><span>🛡️</span><b>دفع آمن</b><small>100% مضمون</small></div>
-    <div><span>✦</span><b>منتجات أصلية</b><small>من AliExpress</small></div>
-  </section>
-
-  <section class="why">
-    <h2>لماذا سوقنا؟</h2>
-    <p>نختار المنتجات بعناية ونأخذك مباشرة إلى المتجر الشريك لإتمام الشراء.</p>
-  </section>
-</main>
-
-<nav class="bottom-nav">
-  <a href="#account"><span>♙</span>حسابي</a>
-  <a href="#favorites"><span>♡</span>المفضلة</a>
-  <a class="cart-nav" href="#products"><span>🛒<i>0</i></span>السلة</a>
-  <a href="#search"><span>⌕</span>بحث</a>
-  <a class="active" href="#home"><span>⌂</span>الرئيسية</a>
-</nav>
-
-<div class="side-menu" id="sideMenu">
-  <button id="closeMenu">×</button>
-  <a href="#home">الرئيسية</a><a href="#products">أفضل العروض</a>
-  <a href="about.html">من نحن</a><a href="privacy.html">الخصوصية</a><a href="contact.html">تواصل معنا</a>
-</div>
-
-<script src="app.js"></script>
+    <div class="container copyright">© <span id="year"></span> سوقنا SOUQNA — جميع الحقوق محفوظة.</div>
+  </footer>
+  <script src="app.js"></script>
 </body>
 </html>
